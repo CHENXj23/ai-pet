@@ -1,0 +1,10 @@
+{
+  "name": "chatWithPet",
+  "version": "1.0.0",
+  "description": "AI Pet Chat Function",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3",
+    "node-fetch": "^2.6.7"
+  }
+}

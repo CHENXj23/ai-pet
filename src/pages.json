@@ -1,0 +1,55 @@
+{
+	"pages": [
+		{
+			"path": "pages/community/community",
+			"style": { "navigationBarTitleText": "社区" }
+		},
+		{
+			"path": "pages/pet/pet",
+			"style": { "navigationBarTitleText": "我的宠物" }
+		},
+		{
+			"path": "pages/user/user",
+			"style": { "navigationBarTitleText": "我的" }
+		},
+    {
+      "path": "pages/community/community-detail",
+      "style": {
+        "navigationBarTitleText": "详情",
+        "enablePullDownRefresh": true 
+      }
+    }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "AI 宠物乐园",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FF6B81", 
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/community/community",
+				"text": "社区",
+				"iconPath": "static/tabbar/community.png",
+				"selectedIconPath": "static/tabbar/community.png"
+			},
+			{
+				"pagePath": "pages/pet/pet",
+				"text": "养宠",
+				"iconPath": "static/tabbar/pet.png",
+				"selectedIconPath": "static/tabbar/pet.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user.png"
+			}
+		]
+	}
+}
