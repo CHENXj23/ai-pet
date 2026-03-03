@@ -48,7 +48,9 @@
         </view>
         
         <!-- 切换按钮 -->
-        <view class="switch-btn" @click="clearSelection">返回</view>
+        <view class="switch-btn"  @click="clearSelection">
+          <image src="/static/tabbar/fanhui.png" alt="" srcset="" class="switch-btn-pic" mode="aspectFill"></image>
+        </view>
       </view>
 
       <!-- 中部：聊天记录 -->
@@ -391,15 +393,14 @@ const sendMessage = async () => {
 .switch-btn {
   position: absolute;
   top: 30rpx;
-  left: 30rpx;
-  width: 100rpx;
-  height: 60rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30rpx;
+  left: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
-
+.switch-btn-pic{
+  width: 50rpx;
+  height: 50rpx;
+}
 /* 消息列表 & 输入框 (样式保持不变) */
 .message-list {
   flex: 1;

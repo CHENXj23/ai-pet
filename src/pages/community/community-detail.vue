@@ -117,14 +117,14 @@
           <text class="icon-btn">😊</text>
           <text class="icon-btn">📷</text>
         </view> -->
-        <button 
+        <text 
           class="send-btn-small" 
           :class="{ active: commentText.trim() }"
           @click="submitComment"
           :disabled="!commentText.trim()"
         >
           发送
-        </button>
+        </text>
       </view>
     </view>
 
@@ -471,7 +471,7 @@ const loadMoreComments = () => {}
 
 /* 6. 评论列表 */
 .comment-list {
-  padding: 0 30rpx 100rpx 30rpx;
+  padding: 0 30rpx 200rpx 30rpx;
 }
 .empty-comment {
   text-align: center;
@@ -543,7 +543,7 @@ const loadMoreComments = () => {}
   bottom: 0;
   left: 0;
   right: 0;
-  height: 110rpx;
+  height: 200rpx;
   background: #fff;
   border-top: 1rpx solid #eee;
   display: flex;
@@ -581,21 +581,18 @@ const loadMoreComments = () => {}
 }
 
 .send-btn-small {
-  background: #ddd;
-  color: #fff;
-  border: none;
+  color: #333;
   padding: 10rpx 25rpx;
-  border-radius: 30rpx;
+  border-radius: 20rpx;
   font-size: 26rpx;
   line-height: 1.5;
   margin: 0;
   transition: all 0.3s;
   &:disabled {
     opacity: 1;
-    background: #ddd;
   }
   &.active {
-    background: #FF6B81;
+    color: #FF6B81;
   }
 }
 </style>
