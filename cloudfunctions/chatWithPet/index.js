@@ -4,7 +4,7 @@ const fetch = require('node-fetch')
 cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV })
 
 // 【步骤 1】填入你刚才复制的阿里云 API Key
-const AI_API_KEY = 'sk-2d3d0985c1c54c1b96bfdc51fffb069a' 
+const AI_API_KEY = '' 
 
 // 【步骤 2】阿里云通义千问的接口地址
 const AI_API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
